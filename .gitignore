@@ -43,3 +43,7 @@ Thumbs.db
 *.so
 *.dylib
 *.dll
+demoscript.md 
+/dist/
+investor_pitch.md 
+/proposal.pdf

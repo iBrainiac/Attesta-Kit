@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Attesta — Investor Presentation</title>
+  <link rel="stylesheet" href="./presentation.css">
+</head>
+<body>
+  <div class="slide" id="s1">
+    <h1>Attesta</h1>
+    <p class="lead">Passkeys + Account Abstraction for Solana</p>
+    <p class="sub">Replace seed phrases with WebAuthn; enforce on‑chain policies; privacy first.</p>
+  </div>
+
+  <div class="slide" id="s2">
+    <h2>Problem</h2>
+    <ul>
+      <li>Poor consumer UX (seed phrases) blocks mainstream adoption</li>
+      <li>High wallet support cost, lost keys, phishing</li>
+      <li>Infra misses predictable, high‑frequency consumer activity</li>
+    </ul>
+  </div>
+
+  <div class="slide" id="s3">
+    <h2>Solution</h2>
+    <ul>
+      <li>Device‑native passkeys (WebAuthn, P‑256) for signing</li>
+      <li>On‑chain policy engine: spending limits, timelocks, recovery</li>
+      <li>Privacy by design — biometric data never leaves device</li>
+    </ul>
+  </div>
+
+  <div class="slide" id="s4">
+    <h2>Why this matters for Solana infra</h2>
+    <ul>
+      <li>Unlocks consumer dApps (payments, subscriptions, gaming)</li>
+      <li>Drives sustained RPC & validator usage (micro‑tx volume)</li>
+      <li>Reduces custodial support costs and increases protocol stickiness</li>
+    </ul>
+  </div>
+
+  <div class="slide" id="s5">
+    <h2>Readiness & Differentiators</h2>
+    <ul>
+      <li>Anchor program + Rust & TS SDKs + demo UI (prototype)</li>
+      <li>On‑chain P‑256 WebAuthn verification & replay protection</li>
+      <li>Policy enforcement + Playwright E2E harness for CI</li>
+    </ul>
+    <p class="small">See: <code>programs/attesta</code>, <code>sdk/ts</code>, <code>e2e/playwright</code></p>
+  </div>
+
+  <div class="slide" id="s6">
+    <h2>Ask & Pilot</h2>
+    <p>Pilot package: RPC/devnet credits, indexer access, 3‑month engineering collaboration.</p>
+    <p class="cta">Goal: 2 wallet integrations + 1 consumer app on devnet in 90 days</p>
+    <p class="small">Contact: Attesta engineering — propose 30–45m pilot kickoff</p>
+  </div>
+
+  <footer class="notes">Generated from <code>investor_pitch.md</code> — minimal, presentation‑ready.</footer>
+</body>
+</html>
