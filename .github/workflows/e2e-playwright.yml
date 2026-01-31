@@ -1,0 +1,30 @@
+name: E2E — Playwright (minimal)
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install & build app
+        working-directory: demo/web/minimal-app
+        run: |
+          npm ci
+      - name: Start and test (Playwright)
+        uses: microsoft/playwright-github-action@v1
+        with:
+          run: |
+            cd e2e/playwright && npm ci
+            npx playwright install --with-deps
+            npx playwright test
+        env:
+          CI: true
