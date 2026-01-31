@@ -13,7 +13,7 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: 'npm install && npm run dev',
+    command: 'npm run dev',
     cwd: '../../demo/web/minimal-app',
     url: 'http://127.0.0.1:5173',
     timeout: 60_000,
