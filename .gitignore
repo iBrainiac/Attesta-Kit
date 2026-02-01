@@ -17,6 +17,7 @@ target/types/
 *.json
 !package.json
 !tsconfig.json
+!vercel.json
 !**/node_modules/**/package.json
 
 # Node
@@ -43,3 +44,10 @@ Thumbs.db
 *.so
 *.dylib
 *.dll
+demoscript.md 
+/dist/
+investor_pitch.md 
+/proposal.pdf
+privacy_policy.md
+privacy.md
+privacy_standalone.md
